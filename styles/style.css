@@ -15,3 +15,42 @@ body {
 	content: "";
 	clear: both;
 }
+/*HEADER SECTION*/
+.header {
+	display: block;
+	text-align: right;
+}
+.header li {
+	display: inline;
+	padding-right: 30px;
+}
+.header ul {
+	display: inline;
+}
+.header a{
+	text-decoration: none;
+}
+.header a:hover {
+	font-weight: bold;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	text-align: left;
+	padding: 5px 20px;
+	min-width: 200px;
+	background-color: transparent;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.header input {
+	height: 30px;
+	border: none;
+	background-color: #e8e4f1;
+}
