@@ -62,6 +62,9 @@ body {
 .drop-style:hover {
 	color: #fff200;
 }
+.drop-style:hover::before {
+	content: '>';
+}
 .nav:hover {
 	font-weight: bold;
 	letter-spacing: -0.25px;
@@ -100,6 +103,9 @@ body {
 	border: none;
 	background-color: #e8e4f1;
 }
+.header:active input {
+	z-index: 1;
+}
 .header i {
 	font-size: 12px;
 	color: #5f5f60;
@@ -131,6 +137,7 @@ body {
 .home p {
 	color: #fff;
 }
+
 /* WHO CHOOSE US*/
 .who-choose-us {
 	padding: 100px 0;
@@ -139,8 +146,9 @@ body {
 .who-choose-us h2 {
 	margin: 0;
 	font-size: 32px;
+	color: #232323;
 }
-.who-choose-us .blue-text {
+.blue-text {
 	color: #009dda
 }
 .who-choose-us p {
@@ -156,14 +164,14 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
 .who-choose-us .flex-item {
+	position: relative;
 	border: 1px solid #ebebeb;
 	width: 170px;
 	height: 100%;
 	margin: 15px;
 }
-.flex-container i {
+.flex-container .fa-heart-o, .fa-commenting-o, .fa-laptop, .fa-star-o, .fa-flag-o {
 	padding: 25px;
 	font-size: 52px;
 	color: #503392;
@@ -181,5 +189,83 @@ body {
 	overflow: hidden;
 	text-overflow: clip;
 }
+.flex-item .hover-see-more {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 55%;
+	background-color: #503392;
+	color: #fff;
+	bottom: 0;
+	z-index: 1;
+}
+.flex-item:hover .hover-see-more {
+	display: block;
+}
+.hover-see-more h6 {
+	font-weight: 600;
+}
+.hover-see-more .fa-link, .fa-search-plus {
+	border-radius: 30px;
+	padding: 8px;
+	margin: 15px 5px 0 5px;
+	font-size: 12px;
+}
+.hover-see-more .fa-link {
+	border: 1px  solid #fff;
+	color: #fff;
+}
+.hover-see-more .fa-search-plus {
+	background-color: #fff;
+	border: 1px  solid #503392;
+	color: #503392;
+}
 
-
+/*ABOUS US*/
+.about-us {
+	border-top: 1px solid lightgrey;
+	padding: 65px 0;
+}
+.about-us .about-desc {
+	margin-left: 100px;
+	padding: 0;
+}
+.about-us h2 {
+	font-size: 31px;
+	color: #373737;
+	margin-bottom: 17px;
+}
+.about-us .silver-p {
+	color: #999999;
+	margin-bottom: 35px;
+}
+.about-us p {
+	color: #373737;
+	font-size: 11.4px;
+	line-height: 1.8;
+	font-weight: 600;
+}
+.animation {
+	display: flex;
+}
+.about-us img {
+	width: 320px;
+	float: right;
+	margin: 80px 100px 0 0;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
