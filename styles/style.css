@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1320px;
 	margin: auto;
 	padding: 0 15px;
 }
@@ -22,6 +22,9 @@ body {
 	font-size: 12.5px;
 	line-height: 1.7;
 }
+.blue-text {
+	color: #009dda
+}
 
 /*HEADER SECTION*/
 .header {
@@ -30,6 +33,7 @@ body {
 	width: 100%;
 	height: 60px;
 	background-color: #fff;
+	z-index: 1;
 }
 .header img {
 	max-width: 240px;
@@ -114,7 +118,7 @@ body {
 	top: 40%;
 }
 
-/*HOME*/
+/*HOME SECTION*/
 .home {
 	background: url("../images/section1.jpg") no-repeat center;
 	background-size: cover;
@@ -138,7 +142,7 @@ body {
 	color: #fff;
 }
 
-/* WHO CHOOSE US*/
+/* WHO CHOOSE US SECTION*/
 .who-choose-us {
 	padding: 100px 0;
 	text-align: center;
@@ -147,9 +151,6 @@ body {
 	margin: 0;
 	font-size: 32px;
 	color: #232323;
-}
-.blue-text {
-	color: #009dda
 }
 .who-choose-us p {
 	color: #999999;
@@ -221,7 +222,7 @@ body {
 	color: #503392;
 }
 
-/*ABOUS US*/
+/*ABOUS US SECTION*/
 .about-us {
 	border-top: 1px solid lightgrey;
 	padding: 65px 0;
@@ -246,7 +247,34 @@ body {
 	font-weight: 600;
 }
 .animation {
-	display: flex;
+	margin-top: 55px;
+	color: #444444;
+	font-size: 14px;
+}
+.animation h5 {
+	margin: 35px 0 15px 0;
+}
+.animation .right-side {
+	float: right;
+}
+.animation .transition {
+	width: 10px;
+	height: 3px;
+	background: #009dda;
+	-webkit-transition: width 1.5s;
+	transition: width 1.5s;
+}
+.about-us:hover ._79 {
+	width: 79%;
+}
+.about-us:hover ._90 {
+	width: 90%;
+}
+.about-us:hover ._69 {
+	width: 69%;
+}
+.about-us:hover ._92 {
+	width: 92%;
 }
 .about-us img {
 	width: 320px;
@@ -269,3 +297,41 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/*GET IN TOUCH SECTION*/
+.get-in-touch {
+	padding: 50px 0 60px 0;
+	text-align: center;
+}
+.get-in-touch h2 {
+	margin-bottom: 0;
+	font-size: 31px;
+	color: #232323;
+}
+.get-in-touch p {
+	color: #bbbbbb;
+}
+
+/*FOOTER SECTION*/
+.footer {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #1a1a1a;
+}
+.footer p {
+	position: absolute;
+	font-size: 13px;
+	font-weight: 700;
+	color: #545454;
+	top: 2%;
+}
+.footer i {
+	margin: 15px 10px 15px 0;
+	float: right;
+	font-size: 20px;
+}
+.footer .fa-dribbble
+.footer .fa-twitter
+.footer .fa-google-plus
+.footer .fa-facebook
