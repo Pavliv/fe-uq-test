@@ -11,9 +11,9 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<img src="images/logo.jpg" alt="Logo">
+			<a href="#home"><img src="images/logo.jpg" alt="Logo"></a>
 			<ul>
-				<li><a href="#" class="nav">Home</a></li>
+				<li><a href="#home" class="nav">Home</a></li>
 				<div class="dropdown"><li><a href="#" class="nav">Products</a></li>
 					<div class="dropdown-content">
 						<span><a href="#" class="drop-style">> Name Surname</a></span>
@@ -28,15 +28,15 @@
 						<span><a href="#" class="drop-style">> Nelson Noa</a></span>
 					</div>
 				</div>
-				<li><a href="#" class="nav">About</a></li>
-				<li><a href="#" class="nav">Contact</a></li>
+				<li><a href="#about" class="nav">About</a></li>
+				<li><a href="#contact" class="nav">Contact</a></li>
 			</ul>
 			<input type="search">
 			<i class="fa fa-search" aria-hidden="true"></i>
 		</div>
 	</header>
 
-	<section class="Home">
+	<section class="Home" id="home">
 		<div class="container">
 			<h1>CREATIVE <span class="yellow-text">DESIGN AGENCY</span></h1>
 			<p class="centered-p">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
@@ -102,7 +102,7 @@
 		</div>
 	</section>
 
-	<section class="about-us">
+	<section class="about-us" id="about">
 		<div class="container">
 			<div class="col-5 about-desc">
 				<h2><span class="blue-text">ABOUT</span> US</h2>
@@ -123,12 +123,25 @@
 		</div>
 	</section>
 
-	<section class="get-in-touch">
+	<section class="get-in-touch" id="contact">
 		<div class="container">
 			<h2>GET IN<span class="blue-text"> TOUCH</span></h2>
 			<p class="centered-p">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
 		</div>
 	</section>
+
+	<main>
+		<div id="wrapper">
+			<!-- <div id="silv-opacity"> -->
+				<div id="map"></div>
+				<div id="over_map">
+					<input type="text" placeholder="Full Name">
+					<input type="text" placeholder="E-mail Address">
+					<input type="text" placeholder="Message">
+				</div>
+			<!-- </div> -->
+		</div>
+	</main>
 
 	<footer class="footer">
 		<div class="container">
@@ -140,6 +153,24 @@
 		</div>
 	</footer>
 
+<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	function initMap() {
+		var uluru = {lat: 49.85304056, lng:24.02387828 };
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 12,
+			scrollwheel: false,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		});
+	}
+</script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu2d4uLnKQBya4RmfSvfOQ2MrQDG2ffMQ&callback=initMap">
+</script>
 	<script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
