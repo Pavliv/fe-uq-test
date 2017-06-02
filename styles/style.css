@@ -50,6 +50,9 @@ body {
 	right: 320;
 	top: 4%;
 }
+.header span {
+	width: 100%;
+}
 .header a{
 	text-decoration: none;
 }
@@ -336,42 +339,82 @@ body {
 	width: 60%;
 	height: 370px;
 	border: none;
-	background: rgba(100, 100, 100, 0.5);
+	background-color: #fff;
+	/*background: rgba(100, 100, 100, 0.5);*/
 	z-index: 98;
 }
 .input-form {
 	width: 50%;
-	margin: 30px;
+	margin: 70px 0 0 60px;
 }
 .input-form input[type=checkbox] {
 	display: none;
 }
-.input-form span {
-	height: 20px;
-	width: 20px;
-	border: 1px solid grey;
-	display: inline-block;
-	position: relative;
-}
-/*[type=checkbox]:checked + span:before {
-	content: '\2714';
+.input-form label {
 	position: absolute;
-	top: -5px;
-	left: 0;
-}*/
-.input-form input[type=text], input[type=email] {
-	border: 1px solid /*#9b9b9b*/blue;
-	color: /*#9b9b9b*/blue;
+	margin-top: 25px;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
 	background: transparent;
+	border:1px solid #9b9b9b;
+	z-index: 99;
+}
+.input-form label:after {
+	position: absolute;
+	opacity: 0;
+	content: '';
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 3px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+.input-form label:hover::after {
+	opacity: 0;
+}
+.input-form input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.input-form span {
+	position: absolute;
+	margin: 25px 0 0 30px;
+	font-size: 13px;
+	color: #9b9b9b;
+}
+.input-form input[type=text], input[type=email] {
+	border: 1px solid #9b9b9b;
+	color: #9b9b9b;
+	background: transparent;
+	margin-bottom: 10px;
 	padding: 10px;
-	margin: 10px;
+	width: 48%;
 }
-.input-form input[name=name], input[name=email] {
-	width: 44%;
+.input-form input[type=text] {
+	float: left;
 }
-.input-form input[name=message] {
+.input-form input[type=email] {
+	float: right;
+}
+.input-form textarea {
+	background-color: transparent;
+	border: 1px solid #9b9b9b;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+	resize: none;
 	width: 100%;
-	height: 100px;
+	margin: 0;
+}
+.input-form button {
+	float: right;
+	background-color: #ffff00;
+	border: none;
+	padding: 10px 30px;
+	margin-top: 10px;
 }
 
 
