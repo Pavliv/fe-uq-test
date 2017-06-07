@@ -40,15 +40,14 @@ body {
 	padding: 8px 0 0 96px;
 }
 .header li {
-	display: inline;
+	display: inline-block;
 	padding:0 45px 20px 0;
 	font-size: 13.5px;
 }
 .header ul {
 	position: absolute;
-	display: inline;
 	right: 320;
-	top: 4%;
+	top: 30%;
 }
 .dropdown-second .all-width {
 	padding-right: 85px;
@@ -85,7 +84,7 @@ body {
 	position: absolute;
 	background: rgba(44, 30, 65, 0.6);
 	text-align: left;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	padding: 20px 0 20px 20px;
 	min-width: 155px;
 	border-top: 2px solid #fff200;
@@ -122,11 +121,9 @@ body {
 }
 
 /*HOME SECTION*/
-.home {
-	background: url("../images/section1.jpg") no-repeat center;
-	background-size: cover;
+#home {
+	position: relative;
 	margin-top: 60px;
-	height: 650px;
 	text-align: center;
 }
 .home h1 {
@@ -143,6 +140,12 @@ body {
 }
 .home p {
 	color: #fff;
+}
+.carousel-inner .item {
+	height: 650px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
 }
 
 /* WHO CHOOSE US SECTION*/
