@@ -50,8 +50,8 @@ body {
 	right: 320;
 	top: 4%;
 }
-.header span {
-	width: 100%;
+.dropdown-second .all-width {
+	padding-right: 85px;
 }
 .header a{
 	text-decoration: none;
@@ -86,7 +86,7 @@ body {
 	background: rgba(44, 30, 65, 0.6);
 	text-align: left;
 	margin-top: 20px;
-	padding: 20px 20px;
+	padding: 20px 0 20px 20px;
 	min-width: 155px;
 	border-top: 2px solid #fff200;
 	z-index: 1;
@@ -323,15 +323,15 @@ body {
 	height: 540px;
 	width: 100%;
 }
-/*#silv-opacity {
+#silv-opacity {
 	position: absolute;
-	top: 20%;
+	top: 0;
 	width: 100%;
 	height: 540px;
 	border: none;
-	background: rgba(100, 100, 100, 0.5);
+	background: rgba(10, 10, 10, 0.4);
 	z-index: 98;
-}*/
+}
 #over_map {
 	position: absolute;
 	top: 16%;
@@ -339,8 +339,7 @@ body {
 	width: 60%;
 	height: 370px;
 	border: none;
-	background-color: #fff;
-	/*background: rgba(100, 100, 100, 0.5);*/
+	background: rgba(20, 20, 20, 0.7);
 	z-index: 98;
 }
 .input-form {
@@ -357,7 +356,7 @@ body {
 	width: 20px;
 	height: 20px;
 	background: transparent;
-	border:1px solid #9b9b9b;
+	border:1px solid #979994;
 	z-index: 99;
 }
 .input-form label:after {
@@ -369,7 +368,7 @@ body {
 	background: transparent;
 	top: 4px;
 	left: 3px;
-	border: 3px solid #333;
+	border: 3px solid #979994;
 	border-top: none;
 	border-right: none;
 	transform: rotate(-45deg);
@@ -384,11 +383,11 @@ body {
 	position: absolute;
 	margin: 25px 0 0 30px;
 	font-size: 13px;
-	color: #9b9b9b;
+	color: #979994;
 }
 .input-form input[type=text], input[type=email] {
-	border: 1px solid #9b9b9b;
-	color: #9b9b9b;
+	border: 1px solid #979994;
+	color: #979994;
 	background: transparent;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -402,8 +401,9 @@ body {
 }
 .input-form textarea {
 	background-color: transparent;
-	border: 1px solid #9b9b9b;
+	border: 1px solid #979994;
 	font-family: 'Open Sans', sans-serif;
+	color: #979994;
 	padding: 10px;
 	resize: none;
 	width: 100%;
@@ -413,8 +413,18 @@ body {
 	float: right;
 	background-color: #ffff00;
 	border: none;
-	padding: 10px 30px;
+	padding: 12px 32px;
 	margin-top: 10px;
+}
+#over_map h6 {
+	position: absolute;
+	right: 90;
+	top: 40;
+	width: 20%;
+	color: #f3f3f3;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.5;
 }
 
 
