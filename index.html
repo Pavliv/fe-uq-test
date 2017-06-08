@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="custom-container">
 			<a href="#home"><img src="images/logo.jpg" alt="Logo"></a>
 			<ul>
 				<li><a href="#home" class="nav">Home</a></li>
@@ -49,15 +49,15 @@
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner" role="listbox">
-				<div class="item active" style="background-image: url('images/section1.jpg');">
+				<div class="item active" style="background-image: url('images/section1.jpg');" data-interval="3000">
 					<h1>CREATIVE <span class="yellow-text">DESIGN AGENCY</span></h1>
 					<p class="centered-p">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
 				</div>
-				<div class="item" style="background-image: url('images/section1.jpg');">
+				<div class="item" style="background-image: url('images/section1.jpg');" data-interval="5000">
 					<h1>CREATIVE <span class="yellow-text">DESIGN AGENCY</span></h1>
 					<p class="centered-p">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
 				</div>
-				<div class="item" style="background-image: url('images/section1.jpg');">
+				<div class="item" style="background-image: url('images/section1.jpg');" data-interval="8000">
 					<h1>CREATIVE <span class="yellow-text">DESIGN AGENCY</span></h1>
 					<p class="centered-p">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
 				</div>
@@ -74,7 +74,7 @@
 	</section>
 
 	<section class="who-choose-us">
-		<div class="container">
+		<div class="custom-container">
 			<h2>WHY <span class="blue-text">CHOOSE US</span></h2>
 			<p class="centered-p">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
 			<div class="flex-container">
@@ -133,7 +133,7 @@
 	</section>
 
 	<section class="about-us" id="about">
-		<div class="container">
+		<div class="custom-container container">
 			<div class="col-5 about-desc">
 				<h2><span class="blue-text">ABOUT</span> US</h2>
 				<p class="silver-p">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
@@ -154,7 +154,7 @@
 	</section>
 
 	<section class="get-in-touch" id="contact">
-		<div class="container">
+		<div class="custom-container container">
 			<h2>GET IN<span class="blue-text"> TOUCH</span></h2>
 			<p class="centered-p">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
 		</div>
@@ -166,13 +166,13 @@
 			<div id="map"></div>
 			<div id="over_map">
 				<form class="input-form">
-					<input type="text" name="name" placeholder="Full Name">
-					<input type="email" name="email" placeholder="E-Mail Address">
-					<textarea name="Message" cols="30" rows="6" placeholder="Message"></textarea>
+					<input type="text" name="name" placeholder="Full Name" required>
+					<input type="email" name="email" placeholder="E-Mail Address" required>
+					<textarea name="Message" cols="30" rows="5" placeholder="Message" required></textarea>
 					<input type="checkbox" value="1" id="checkbox-icon" name="">
 						<label for="checkbox-icon"></label>
 						<span>I like your company</span>
-					<button>Send</button>
+					<button type="submit">Send</button>
 				</form>
 				<h6>69/A, Some Street Name <br> Your City, code 01234 <br> Country Name <br><br> +880 123 456 78 98 <br> +860 987 648 74 95 <br><br> company@mail.com <br> sales@mail.com</h6>
 			</div>
@@ -180,7 +180,7 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
+		<div class="custom-container">
 			<p>Copyright © Company. All Rights Reserved  2016</p>
 			<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -189,24 +189,8 @@
 		</div>
 	</footer>
 
-<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-	function initMap() {
-		var uluru = {lat: 49.85304056, lng:24.02387828 };
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 12,
-			scrollwheel: false,
-			center: uluru
-		});
-		var marker = new google.maps.Marker({
-			position: uluru,
-			map: map
-		});
-	}
-</script>
-<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu2d4uLnKQBya4RmfSvfOQ2MrQDG2ffMQ&callback=initMap">
-</script>
+	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu2d4uLnKQBya4RmfSvfOQ2MrQDG2ffMQ&callback=initMap"></script>
 	<script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
