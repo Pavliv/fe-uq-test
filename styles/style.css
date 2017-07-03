@@ -149,6 +149,15 @@ body {
 }
 
 /* WHO CHOOSE US SECTION*/
+@media (max-width: 500px) {
+	.who-choose-us p {
+		width: 100%;
+	}
+	.who-choose-us .flex-item {
+		display: inline-block;
+		width: 100%;
+	}
+}
 .who-choose-us {
 	padding: 100px 0;
 	text-align: center;
