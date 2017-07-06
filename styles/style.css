@@ -178,18 +178,6 @@ body {
 	-o-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 }
-@media (max-width: 1024px) {
-	#nav-icon1 {
-		display: block;
-	}
-	.header li, input {
-		display: none;
-	}
-	.header i {
-		display: none;
-	}
-}
-
 
 /*HOME SECTION*/
 #home {
@@ -220,15 +208,6 @@ body {
 }
 
 /* WHO CHOOSE US SECTION*/
-@media (max-width: 500px) {
-	.who-choose-us p {
-		width: 100%;
-	}
-	.who-choose-us .flex-item {
-		display: inline-block;
-		width: 100%;
-	}
-}
 .who-choose-us {
 	padding: 100px 0;
 	text-align: center;
@@ -541,3 +520,69 @@ body {
 	color: #6782b8;
 }
 
+
+@media (max-width: 1024px) {
+	#nav-icon1 {
+		display: block;
+	}
+	.header li, input {
+		display: none;
+	}
+	.header i {
+		display: none;
+	}
+	.home h1 {
+		width: 80%;
+		font-size: 40px;
+		padding-top: 215px;
+	}
+	.carousel .item {
+		height: 550px;
+	}
+}
+@media (max-width: 768px) {
+	.header img {
+		padding: 8px 0 0 96px;
+		margin-left: 0;
+	}
+	.home h1 {
+		width: 90%;
+		font-size: 42px;
+		padding-top: 190px;
+	}
+	.home p {
+		width: 70%;
+	}
+	.carousel .item {
+		height: 500px;
+	}
+}
+@media (max-width: 520px) {
+	.header img {
+		width: 190px;
+		padding: 9px 0 0 56px;
+	}
+	.home h1 {
+		font-size: 39px;
+		padding-top: 130px;
+	}
+	.home p {
+		width: 80%;
+	}
+	.carousel .item {
+		height: 450px;
+	}
+}
+@media (max-width: 400px) {
+	.header img {
+		width: 170px;
+		padding: 9px 0 0 36px;
+	}
+	.home h1 {
+		font-size: 35px;
+		padding-top: 100px;
+	}
+	.carousel .item {
+		height: 400px;
+	}
+}
