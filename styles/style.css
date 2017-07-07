@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 .custom-container {
-	max-width: 1320px;
+	max-width: 1570px;
 	margin: auto;
 	padding: 0 15px;
 }
@@ -16,14 +16,14 @@ body {
 	content: "";
 	clear: both;
 }
-.centered-p {
-	width: 55%;
-	margin: 15px auto 0 auto;
-	font-size: 12.5px;
-	line-height: 1.7;
+.centered-p { /*style for some paragraphs*/
+	width: 45%;
+	margin: 20px auto 0 auto;
+	font-size: 14px;
+	line-height: 2;
 }
 .blue-text {
-	color: #009dda
+	color: #009dda /*blue text foe headers*/
 }
 
 /*HEADER SECTION*/
@@ -31,24 +31,24 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	background-color: #fff;
 	z-index: 99;
 }
 .header img {
-	max-width: 240px;
-	padding: 8px 0 0 96px;
-	margin-left: 50px;
+	max-width: 180px;
+	padding: 8px 0 0 0;
+	margin-left: 200px;
 }
 .header li {
 	display: inline-block;
-	padding:0 45px 20px 0;
+	padding:0 45px 25px 0;
 	font-size: 13.5px;
 }
 .header ul {
 	position: absolute;
-	right: 320;
-	top: 30%;
+	right: 405px;
+	top: 33%;
 }
 .dropdown-second .all-width {
 	padding-right: 85px;
@@ -188,9 +188,9 @@ body {
 .home h1 {
 	width: 70%;
 	margin: 0 auto;
-	padding-top: 240px;
+	padding-top: 300px;
 	color: #fff;
-	font-size: 55px;
+	font-size: 50px;
 	letter-spacing: 3px;
 	font-weight: 600;
 }
@@ -201,7 +201,7 @@ body {
 	color: #fff;
 }
 .carousel .item {
-	height: 650px;
+	height: 780px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 20%;
@@ -520,6 +520,37 @@ body {
 	color: #6782b8;
 }
 
+/* RESPONSIVE */
+@media (max-width: 1366px) {
+	.custom-container {
+		max-width: 1320px;
+	}
+	.header {
+		height: 60px;
+	}
+	.header img {
+		max-width: 240px;
+		padding: 8px 0 0 96px;
+		margin-left: 50px;
+	}
+	.header li {
+		padding:0 45px 20px 0;
+		font-size: 13.5px;
+	}
+	.header ul {
+		right: 320;
+		top: 30%;
+	}
+	.carousel .item {
+		height: 650px;
+	}
+	.home h1 {
+		width: 75%;
+		margin: 0 auto;
+		padding-top: 240px;
+		font-size: 50px;
+	}
+}
 
 @media (max-width: 1024px) {
 	#nav-icon1 {
@@ -534,7 +565,7 @@ body {
 	.home h1 {
 		width: 80%;
 		font-size: 40px;
-		padding-top: 215px;
+		padding-top: 200px;
 	}
 	.carousel .item {
 		height: 550px;
@@ -548,7 +579,7 @@ body {
 	.home h1 {
 		width: 90%;
 		font-size: 42px;
-		padding-top: 190px;
+		padding-top: 170px;
 	}
 	.home p {
 		width: 70%;
@@ -564,7 +595,7 @@ body {
 	}
 	.home h1 {
 		font-size: 39px;
-		padding-top: 130px;
+		padding-top: 110px;
 	}
 	.home p {
 		width: 80%;
@@ -580,7 +611,7 @@ body {
 	}
 	.home h1 {
 		font-size: 35px;
-		padding-top: 100px;
+		padding-top: 70px;
 	}
 	.carousel .item {
 		height: 400px;
