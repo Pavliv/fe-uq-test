@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 .custom-container {
-	max-width: 1570px;
+	max-width: 1600px;
 	margin: auto;
 	padding: 0 15px;
 }
@@ -209,49 +209,51 @@ body {
 
 /* WHO CHOOSE US SECTION*/
 .who-choose-us {
-	padding: 100px 0;
+	padding: 120px 0;
 	text-align: center;
 }
 .who-choose-us h2 {
 	margin: 0;
-	font-size: 32px;
+	font-size: 35px;
 	color: #232323;
+	font-weight: 600;
 }
 .who-choose-us p {
+	margin-top: 35px;
 	color: #999999;
-	font-size: 13px;
+	font-size: 14px;
 }
 .who-choose-us .flex-container {
 	display: -webkit-flex;
 	display: flex;
-	margin: 70px auto 0 auto;
-	width: 85%;
-	height: 230px;
+	margin: 90px 200px 0 200px;
+	width: 1170px;
+	height: 270px;
 	align-items: center;
 	justify-content: center;
 }
 .who-choose-us .flex-item {
 	position: relative;
 	border: 1px solid #ebebeb;
-	width: 170px;
+	width: 200px;
 	height: 100%;
 	margin: 15px;
 }
 .flex-container .fa-heart-o, .fa-commenting-o, .fa-laptop, .fa-star-o, .fa-flag-o {
-	padding: 25px;
-	font-size: 52px;
+	padding: 30px;
+	font-size: 55px;
 	color: #503392;
 }
 .flex-container h6 {
-	margin: 15px auto;
+	margin: 25px auto 20px auto;
 	font-size: 13px;
 	font-weight: bold;
 }
 .flex-container p {
-	margin: 15 auto;
-	width: 85%;
-	height: 50px;
-	font-size: 12.5px;
+	margin: 0 auto 35px auto;
+	width: 80%;
+	height: 60px;
+	font-size: 14px;
 	overflow: hidden;
 	text-overflow: clip;
 }
@@ -275,7 +277,7 @@ body {
 	border-radius: 30px;
 	padding: 8px;
 	margin: 15px 5px 0 5px;
-	font-size: 12px;
+	font-size: 20px;
 }
 .hover-see-more .fa-link {
 	border: 1px  solid #fff;
@@ -549,6 +551,37 @@ body {
 		margin: 0 auto;
 		padding-top: 240px;
 		font-size: 50px;
+	}
+	.who-choose-us {
+		padding: 100px 0;
+	}
+	.who-choose-us p {
+		margin-top: 30px;
+	}
+	.who-choose-us .flex-container {
+		margin: 90px auto 0 auto;
+		width: 85%;
+		height: 230px;
+	}
+	.who-choose-us .flex-item {
+		width: 170px;
+	}
+	.flex-container .fa-heart-o, .fa-commenting-o, .fa-laptop, .fa-star-o, .fa-flag-o {
+		padding: 25px;
+		font-size: 52px;
+	}
+	.flex-container h6 {
+		margin: 15px auto;
+		font-size: 13px;
+	}
+	.flex-container p {
+		margin: 15 auto;
+		width: 85%;
+		height: 50px;
+		font-size: 12.5px;
+	}
+	.hover-see-more .fa-link, .fa-search-plus {
+		font-size: 12px;
 	}
 }
 
