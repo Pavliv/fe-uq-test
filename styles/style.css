@@ -23,7 +23,7 @@ body {
 	line-height: 2;
 }
 .blue-text {
-	color: #009dda /*blue text foe headers*/
+	color: #009dda /*blue text for headers*/
 }
 
 /*HEADER SECTION*/
@@ -38,7 +38,7 @@ body {
 .header img {
 	max-width: 180px;
 	padding: 8px 0 0 0;
-	margin-left: 200px;
+	margin-left: 215px;
 }
 .header li {
 	display: inline-block;
@@ -47,7 +47,7 @@ body {
 }
 .header ul {
 	position: absolute;
-	right: 405px;
+	right: 420px;
 	top: 33%;
 }
 .dropdown-second .all-width {
@@ -292,29 +292,30 @@ body {
 /*ABOUS US SECTION*/
 .about-us {
 	border-top: 1px solid lightgrey;
-	padding: 65px 0;
+	padding: 120px 0;
 }
 .about-us .about-desc {
-	margin-left: 100px;
+	margin-left: 85px;
 	padding: 0;
 }
 .about-us h2 {
-	font-size: 31px;
+	font-size: 26px;
 	color: #373737;
-	margin-bottom: 17px;
+	margin-bottom: 36px;
+	font-weight: 600;
 }
 .about-us .silver-p {
 	color: #999999;
-	margin-bottom: 35px;
+	margin-bottom: 60px;
 }
 .about-us p {
 	color: #373737;
-	font-size: 11.4px;
-	line-height: 1.8;
+	font-size: 14px;
+	line-height: 2;
 	font-weight: 600;
 }
 .animation {
-	margin-top: 55px;
+	margin-top: 70px;
 	color: #444444;
 	font-size: 14px;
 }
@@ -344,9 +345,9 @@ body {
 	width: 92%;
 }
 .about-us img {
-	width: 320px;
+	width: 350px;
 	float: right;
-	margin: 80px 100px 0 0;
+	margin: 120px 85px 0 0;
 }
 [class*="col-"] {
 	float: left;
@@ -583,6 +584,31 @@ body {
 	.hover-see-more .fa-link, .fa-search-plus {
 		font-size: 12px;
 	}
+	.about-us {
+		padding: 65px 0;
+	}
+	.about-us .about-desc {
+		margin-left: 65px;
+	}
+	.about-us h2 {
+		font-size: 28px;
+		margin-bottom: 17px;
+	}
+	.about-us .silver-p {
+		margin-bottom: 35px;
+	}
+	.about-us p {
+		font-size: 11.4px;
+		line-height: 1.8;
+	}
+	.animation {
+		margin-top: 55px;
+	}
+	.about-us img {
+		width: 320px;
+		float: right;
+		margin: 60px 40px 0 0;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -603,7 +629,52 @@ body {
 	.carousel .item {
 		height: 550px;
 	}
+	.who-choose-us {
+		padding: 80px 0;
+	}
+	.who-choose-us h2 {
+		font-size: 30px;
+	}
+	.who-choose-us p {
+		margin-top: 20px;
+		width: 80%;
+	}
+	.who-choose-us .flex-container {
+		margin: 60px auto 0 auto;
+		width: 95%;
+		height: auto;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.who-choose-us .flex-item {
+		width: 150px;
+		height: auto;
+		margin: 15px;
+	}
+	.about-us {
+		padding: 55px 0;
+	}
+	.about-us .about-desc {
+		margin-left: 45px;
+		width: 50%;
+	}
+	.about-us h2 {
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+	.about-us .silver-p {
+		margin-bottom: 30px;
+	}
+	.animation {
+		margin-top: 45px;
+	}
+	.about-us img {
+		width: 30%;
+		float: right;
+		margin: 110px 40px 0 0;
+	}
 }
+
 @media (max-width: 768px) {
 	.header img {
 		padding: 8px 0 0 96px;
@@ -619,6 +690,30 @@ body {
 	}
 	.carousel .item {
 		height: 500px;
+	}
+	.who-choose-us {
+		padding: 70px 0;
+	}
+	.who-choose-us h2 {
+		font-size: 27px;
+	}
+	.who-choose-us p {
+		margin-top: 17px;
+	}
+	.who-choose-us .flex-container {
+		margin: 50px auto 0 auto;
+		width: 95%;
+	}
+	.about-us {
+		padding: 45px 0;
+	}
+	.about-us .about-desc {
+		margin-left: 10%;
+		width: 80%;
+	}
+	.about-us img {
+		width: 50%;
+		margin-right: 25%;
 	}
 }
 @media (max-width: 520px) {
@@ -636,6 +731,22 @@ body {
 	.carousel .item {
 		height: 450px;
 	}
+	.who-choose-us .flex-container {
+		margin: 40px auto 0 auto;
+		width: 100%;
+	}
+	.about-us {
+		padding: 40px 0;
+		text-align: center;
+	}
+	.about-us .about-desc {
+		margin-left: 7%;
+		width: 86%;
+	}
+	.about-us img {
+		width: 60%;
+		margin-right: 20%;
+	}
 }
 @media (max-width: 400px) {
 	.header img {
@@ -648,5 +759,13 @@ body {
 	}
 	.carousel .item {
 		height: 400px;
+	}
+	.about-us .about-desc {
+		margin-left: 5%;
+		width: 90%;
+	}
+	.about-us img {
+		width: 70%;
+		margin-right: 15%;
 	}
 }
