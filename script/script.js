@@ -4,6 +4,22 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+// hide search icon on click
+$(document).click(function() {
+	$(".header i").show();
+});
+$(".header input").click(function () {
+	$(".header i").hide(100);
+});
+
+// active link on click
+$(".active-h").click(function () {
+	$(".active-h").css("font-weight", "bold");
+	$(".active-h").css("letter-spacing", "-0.25px");
+});
+
+
 // display menu
 $("#nav-icon1").click(function () {
 	$(".header li").hide(100);
@@ -24,8 +40,8 @@ $(document).ready(function () {
 	$s.slick({
 	autoplay: true, 
 	autoplaySpeed: 1000,
-	dots: false,
-	arrows: false,
+	dots: true,
+	arrows: true,
 	pauseOnFocus: false,
 	pauseOnHover: false,
 	}).on("afterChange", function(e, slick) {
@@ -37,6 +53,12 @@ $(document).ready(function () {
 			$s.slick("setOption", "autoplaySpeed", 1000);
 		}
 	});
+});
+
+// change symbols for arrows
+$(document).ready(function () {
+	$(".slick-next").text(">");
+	$(".slick-prev").text("<");
 });
 
 // init map
